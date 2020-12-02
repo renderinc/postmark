@@ -33,7 +33,7 @@ type Email struct {
 	Attachments []Attachment `json:",omitempty"`
 	// Metadata: metadata
 	Metadata map[string]string `json:",omitempty"`
-	// MessageStream: metadata
+	// MessageStream: Set message stream ID that's used for sending. If not provided, message will default to the outbound transactional stream.
 	MessageStream string `json:",omitempty"`
 }
 
